@@ -6,7 +6,7 @@ const commands = [];
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
-var token: string = process.env.DISCORD_TOKEN != undefined ? process.env.DISCORD_TOKEN : "";
+const token: string = process.env.DISCORD_TOKEN != undefined ? process.env.DISCORD_TOKEN : "";
 
 
 for (const file of commandFiles) {
