@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_fs_1 = __importDefault(require("node:fs"));
 const node_path_1 = __importDefault(require("node:path"));
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const token = "MTEwMzA0ODc5NzYzNjAwNjAwOQ.G7lAor.66Z98wSJKnHSlaMiPdUEXNjOXthXc7s0dVdv3U";
+const token = "MTEwMzA0ODc5NzYzNjAwNjAwOQ.GZL2V9.2MWOwjWz8Mg0CxOOdex8ye9B0-ISFgnKciFUmg";
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.commands = new Collection();
 const commandsPath = node_path_1.default.join(__dirname, 'commands');

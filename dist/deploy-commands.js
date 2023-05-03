@@ -19,7 +19,7 @@ for (const file of commandFiles) {
         console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
     }
 }
-const rest = new discord_js_1.REST().setToken("MTEwMzA0ODc5NzYzNjAwNjAwOQ.G7lAor.66Z98wSJKnHSlaMiPdUEXNjOXthXc7s0dVdv3U");
+const rest = new discord_js_1.REST().setToken("MTEwMzA0ODc5NzYzNjAwNjAwOQ.GZL2V9.2MWOwjWz8Mg0CxOOdex8ye9B0-ISFgnKciFUmg");
 (async () => {
     try {
         console.log(`Started refreshing ${commands.length} application (/) commands.`);

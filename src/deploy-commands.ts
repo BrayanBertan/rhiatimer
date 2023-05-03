@@ -6,6 +6,8 @@ const commands = [];
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
+var token: string = process.env.DISCORD_TOKEN != undefined ? process.env.DISCORD_TOKEN : "";
+
 
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
@@ -17,7 +19,7 @@ for (const file of commandFiles) {
     }
 }
 
-const rest = new REST().setToken("MTEwMzA0ODc5NzYzNjAwNjAwOQ.G7lAor.66Z98wSJKnHSlaMiPdUEXNjOXthXc7s0dVdv3U");
+const rest = new REST().setToken(token);
 
 (async () => {
 	try {

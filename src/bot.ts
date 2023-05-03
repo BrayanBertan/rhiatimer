@@ -3,7 +3,7 @@ import path from 'node:path';
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 
 
-const token = "MTEwMzA0ODc5NzYzNjAwNjAwOQ.G7lAor.66Z98wSJKnHSlaMiPdUEXNjOXthXc7s0dVdv3U";
+const token: string = process.env.DISCORD_TOKEN != undefined ? process.env.DISCORD_TOKEN : "";
 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
